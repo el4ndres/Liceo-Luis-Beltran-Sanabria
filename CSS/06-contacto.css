@@ -1,0 +1,124 @@
+/* ========================================
+   CONTACTO - Sección de contacto
+   Incluye información de contacto y
+   formulario para enviar mensajes
+======================================== */
+
+.contacto {
+    background-color: #f8f9fa; /* Fondo gris claro */
+}
+
+/* Grid de contacto - divide en dos columnas */
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; /* Info más pequeña, formulario más grande */
+    gap: 3rem;
+    align-items: start; /* Alineación al inicio */
+}
+
+/* Sección de información de contacto */
+.contacto-info h3 {
+    font-size: 1.8rem;
+    color: #1e3c72;
+    margin-bottom: 2rem;
+}
+
+/* Cada item de información */
+.info-item {
+    display: flex;
+    gap: 1rem; /* Espacio entre icono y texto */
+    margin-bottom: 2rem;
+    align-items: flex-start;
+}
+
+/* Contenedor del icono */
+.info-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* No se reduce en tamaño */
+}
+
+/* Color del icono SVG */
+.info-icon svg {
+    color: white;
+}
+
+/* Título de cada item de información */
+.info-item h4 {
+    font-size: 1.1rem;
+    color: #1e3c72;
+    margin-bottom: 0.3rem;
+}
+
+/* Texto de cada item de información */
+.info-item p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Enlaces dentro de la información de contacto */
+.info-item a {
+    color: #2a5298;
+    transition: color 0.3s ease;
+}
+
+.info-item a:hover {
+    color: #1e3c72; /* Más oscuro al hacer hover */
+}
+
+/* Formulario de contacto */
+.contacto-form {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-form h3 {
+    font-size: 1.8rem;
+    color: #1e3c72;
+    margin-bottom: 2rem;
+}
+
+/* Grupo de cada campo del formulario */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+/* Etiquetas de los campos */
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Campos de entrada de texto */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.875rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Efecto focus en campos de entrada */
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none; /* Elimina borde por defecto */
+    border-color: #2a5298; /* Borde azul */
+    box-shadow: 0 0 0 3px rgba(42, 82, 152, 0.1); /* Sombra azul suave */
+}
+
+/* Área de texto (textarea) */
+.form-group textarea {
+    resize: vertical; /* Solo permite redimensionar verticalmente */
+    min-height: 120px; /* Altura mínima */
+}

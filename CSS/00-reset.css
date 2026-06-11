@@ -1,0 +1,64 @@
+/* ========================================
+   RESET CSS - Reinicio de estilos del navegador
+   Elimina estilos predeterminados para tener
+   un punto de partida consistente
+======================================== */
+
+/* Reinicia todos los elementos a valores base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuración base del documento HTML */
+html {
+    scroll-behavior: smooth; /* Desplazamiento suave al hacer clic en enlaces internos */
+}
+
+/* Configuración base del cuerpo del documento */
+body {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+    color: #333; /* Color de texto principal */
+    background-color: #fff; /* Fondo blanco */
+}
+
+/* Elimina estilos de lista predeterminados */
+ul, ol {
+    list-style: none;
+}
+
+/* Estilos para enlaces */
+a {
+    text-decoration: none; /* Sin subrayado */
+    color: inherit; /* Hereda el color del padre */
+}
+
+/* Asegura que las imágenes sean responsivas */
+img {
+    max-width: 100%; /* No excede el ancho del contenedor */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Elimina espacio debajo de la imagen */
+}
+
+/* Estilos para botones */
+button {
+    border: none;
+    background: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* Estilos para campos de entrada */
+input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+/* Contenedor principal para centrar contenido */
+.container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra horizontalmente */
+    padding: 0 20px; /* Espaciado interno lateral */
+}

@@ -1,0 +1,113 @@
+/* ========================================
+   NOSOTROS - Sección "Sobre Nosotros"
+   Presenta la historia, misión y visión
+   de la institución educativa
+======================================== */
+
+.nosotros {
+    background-color: white;
+}
+
+/* Contenedor de cada sección dentro de "Nosotros" */
+.nosotros-section {
+    margin-bottom: 4rem; /* Espaciado entre secciones */
+}
+
+/* Contenido con layout flexible */
+.nosotros-content {
+    display: flex;
+    gap: 3rem; /* Espacio entre texto e imagen */
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+/* Sección de texto */
+.nosotros-text {
+    flex: 1; /* Ocupa espacio disponible */
+}
+
+.nosotros-text h3 {
+    font-size: 2rem;
+    color: #1e3c72;
+    margin-bottom: 1.5rem;
+}
+
+.nosotros-text p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    text-align: justify; /* Justifica el texto */
+}
+
+.nosotros-text strong {
+    color: #1e3c72; /* Destaca texto en negrita con color institucional */
+}
+
+/* Sección de imagen */
+.nosotros-image {
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.nosotros-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Contenedor de Misión y Visión */
+.mision-vision {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+/* Tarjeta de Misión/Visión */
+.mv-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); /* Gradiente gris claro */
+    padding: 2.5rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover en tarjeta */
+.mv-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Contenedor del icono en tarjeta */
+.mv-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem; /* Centrado */
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    border-radius: 50%; /* Círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Color del icono SVG */
+.mv-icon svg {
+    color: white;
+}
+
+/* Título de la tarjeta */
+.mv-card h3 {
+    font-size: 1.6rem;
+    color: #1e3c72;
+    margin-bottom: 1rem;
+}
+
+/* Texto de la tarjeta */
+.mv-card p {
+    color: #555;
+    line-height: 1.8;
+    text-align: justify;
+}

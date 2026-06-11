@@ -1,0 +1,58 @@
+/* ========================================
+   BUTTONS - Estilos para botones del sitio
+   Define diferentes tipos de botones:
+   primario, secundario, y para formularios
+======================================== */
+
+/* Estilo base para todos los botones */
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    font-weight: 600; /* Semi-negrita */
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer; /* Cursor de mano */
+    transition: all 0.3s ease; /* Transición suave */
+    border: 2px solid transparent; /* Borde transparente por defecto */
+    text-decoration: none;
+}
+
+/* Botón primario (azul) */
+.btn-primary {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); /* Gradiente azul */
+    color: white;
+    border-color: #1e3c72;
+}
+
+/* Efecto hover del botón primario */
+.btn-primary:hover {
+    background: linear-gradient(135deg, #152a52 0%, #1e3c72 100%); /* Gradiente más oscuro */
+    transform: translateY(-3px); /* Sube ligeramente */
+    box-shadow: 0 8px 16px rgba(30, 60, 114, 0.3); /* Sombra */
+}
+
+/* Botón secundario (blanco con borde) */
+.btn-secondary {
+    background: white;
+    color: #1e3c72; /* Texto azul */
+    border-color: white;
+}
+
+/* Efecto hover del botón secundario */
+.btn-secondary:hover {
+    background: transparent; /* Fondo transparente */
+    color: white; /* Texto blanco */
+    border-color: white;
+    transform: translateY(-3px);
+}
+
+/* Botón de ancho completo */
+.btn-full {
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+/* Estado activo del botón (al hacer clic) */
+.btn:active {
+    transform: translateY(0); /* Regresa a posición original */
+}

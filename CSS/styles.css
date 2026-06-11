@@ -1,0 +1,28 @@
+/* ========================================
+   STYLES.CSS - Archivo principal de estilos
+   Importa todos los módulos CSS necesarios
+   para la página principal (index.html)
+======================================== */
+
+/* Importación de todos los módulos CSS en orden */
+
+/* 1. Reset y estilos base */
+@import '00-reset.css';
+
+/* 2. Componentes principales */
+@import '01-header.css';
+@import '02-hero.css';
+@import '03-buttons.css';
+
+/* 3. Secciones de contenido */
+@import'05-institucion.css';
+@import '04-sections.css';
+@import '05-noticias.css';
+@import '06-contacto.css';
+@import '07-nosotros.css';
+
+/* 4. Footer */
+@import '08-footer.css';
+
+/* 5. Responsive (debe ir al final para sobrescribir estilos) */
+@import '09-responsive.css';

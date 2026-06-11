@@ -1,0 +1,91 @@
+/* ========================================
+   SECTIONS - Estilos para secciones del sitio
+   Define el layout y espaciado de las
+   diferentes secciones de contenido
+======================================== */
+
+/* Espaciado estándar para todas las secciones */
+section {
+    padding: 5rem 0; /* Espaciado vertical generoso */
+}
+
+/* Títulos de sección */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700; /* Negrita */
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #1e3c72; /* Azul institucional */
+    position: relative;
+}
+
+/* Línea decorativa debajo del título */
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #1e3c72, #2a5298); /* Gradiente azul */
+    margin: 1rem auto 0; /* Centrado */
+    border-radius: 2px;
+}
+
+/* Sección de espacios/instalaciones */
+.espacios {
+    background-color: #f8f9fa; /* Fondo gris muy claro */
+}
+
+/* Grid para tarjetas de espacios */
+.espacios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Grid responsivo */
+    gap: 2rem; /* Espacio entre tarjetas */
+}
+
+/* Tarjeta individual de espacio */
+.espacio-card {
+    background: white;
+    border-radius: 12px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta desbordamientos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover en tarjeta de espacio */
+.espacio-card:hover {
+    transform: translateY(-10px); /* Sube al hacer hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+}
+
+/* Contenedor de imagen en tarjeta */
+.espacio-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+/* Imagen dentro del contenedor */
+.espacio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cubre el área sin deformar */
+    transition: transform 0.3s ease;
+}
+
+/* Zoom en imagen al hacer hover en la tarjeta */
+.espacio-card:hover .espacio-image img {
+    transform: scale(1.1); /* Zoom del 110% */
+}
+
+/* Texto dentro de la tarjeta */
+.espacio-card h3 {
+    padding: 1.5rem 1.5rem 0.5rem;
+    font-size: 1.3rem;
+    color: #1e3c72;
+}
+
+.espacio-card p {
+    padding: 0 1.5rem 1.5rem;
+    color: #666; /* Gris medio */
+    line-height: 1.6;
+}

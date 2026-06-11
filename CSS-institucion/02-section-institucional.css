@@ -1,0 +1,139 @@
+/* ========================================
+   SECTION INSTITUCIONAL - Contenido institucional
+   Estilos para las secciones de la página
+   institucional (Reseña, Misión, Visión, etc.)
+======================================== */
+
+/* Espaciado principal */
+main {
+    padding: 3rem 0; /* Espaciado vertical generoso */
+    background-color: #f8f9fa; /* Fondo gris claro */
+}
+
+/* Cada sección institucional */
+.section-institucional {
+    background: white;
+    padding: 3rem;
+    margin-bottom: 2.5rem;
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra suave */
+}
+
+/* Título principal de cada sección */
+.section-institucional h1 {
+    font-size: 2.5rem;
+    color: #1e3c72; /* Azul institucional */
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid #2a5298; /* Línea inferior azul */
+    position: relative;
+}
+
+/* Decoración del título */
+.section-institucional h1::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background: #ffd700; /* Dorado */
+}
+
+/* Subtítulos dentro de las secciones */
+.section-institucional h2 {
+    font-size: 1.8rem;
+    color: #1e3c72;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Párrafos de contenido */
+.section-institucional p {
+    color: #555; /* Gris oscuro */
+    line-height: 1.8; /* Altura de línea generosa para legibilidad */
+    margin-bottom: 1.5rem;
+    text-align: justify; /* Justifica el texto */
+    font-size: 1.05rem;
+}
+
+/* Contenedor de imágenes dentro de secciones */
+.section-institucional div img {
+    width: 100%;
+    max-width: 900px; /* Ancho máximo */
+    height: auto;
+    margin: 2rem auto; /* Centrado */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra */
+    display: block;
+}
+
+/* Contenedor de Misión y Visión */
+.mision-vision-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+/* Tarjeta individual de Misión/Visión */
+.mv-box {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover en tarjeta */
+.mv-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Título dentro de tarjeta Misión/Visión */
+.mv-box h2 {
+    color: #1e3c72;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Texto dentro de tarjeta */
+.mv-box p {
+    text-align: justify;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Iconos decorativos (si se agregan) */
+.icon-institucional {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Listas dentro de secciones */
+.section-institucional ul,
+.section-institucional ol {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-institucional li {
+    margin-bottom: 0.5rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Texto destacado (strong) */
+.section-institucional strong {
+    color: #1e3c72;
+    font-weight: 600;
+}

@@ -1,0 +1,124 @@
+/* ============================================
+   SECCIÓN INSTITUCIÓN
+   ============================================
+   Este archivo estila:
+   - Reseña histórica con imagen y texto
+   - Grid de 3 características principales
+   - Tarjetas con borde izquierdo dorado
+   - Efectos hover en las tarjetas
+   - Responsive para móvil y desktop
+   ============================================ */
+
+/* Sección principal de institución */
+.institucion {
+    padding: 4rem 0;
+    background-color: var(--white);
+}
+
+/* Contenedor con imagen y texto lado a lado */
+.institucion-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+/* Dos columnas en desktop */
+@media (min-width: 768px) {
+    .institucion-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Imagen de la institución con sombra */
+.institucion-image img {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Texto de reseña histórica */
+.institucion-text h3 {
+    font-size: 1.8rem;
+    color: #1e3c72;
+    margin-bottom: 1rem;
+}
+/* Título h2 de las secciones */
+.section-header h2 {
+    font-size: 2.5rem;
+    color: #1e3c72;
+    margin-bottom: 0.5rem;
+}
+
+/* Aumentar tamaño en desktop */
+@media (min-width: 768px) {
+    .section-header h2 {
+        font-size: 3rem;
+    }
+}
+
+/* Reducir tamaño en móvil */
+@media (max-width: 768px) {
+    .section-header h2 {
+        font-size: 2rem;
+    }
+}
+
+.institucion-text p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+/* ============================================
+   GRID DE CARACTERÍSTICAS
+   ============================================ */
+
+/* Grid de 3 características */
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+/* Tres columnas en desktop */
+@media (min-width: 768px) {
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Tarjeta de característica */
+.feature-card {
+    padding: 2rem;
+    background-color: var(--light-bg);
+    border-left: 4px solid var(--accent);
+    border-radius: 0.5rem;
+    transition: var(--transition);
+}
+
+/* Efecto hover - elevar tarjeta y agregar sombra */
+.feature-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+}
+
+/* Icono emoji de la característica */
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Título de la característica */
+.feature-card h4 {
+    font-size: 1.3rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+/* Descripción de la característica */
+.feature-card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}

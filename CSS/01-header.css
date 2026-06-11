@@ -1,0 +1,155 @@
+/* ========================================
+   HEADER - Encabezado principal del sitio
+   Contiene el logo, nombre de la institución
+   y menú de navegación principal
+======================================== */
+
+.header {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); /* Gradiente azul */
+    color: white;
+    padding: 1.2rem 0; /* Espaciado vertical */
+    position: sticky; /* Se mantiene fijo al hacer scroll */
+    top: 0; /* Posición en la parte superior */
+    z-index: 1000; /* Aparece sobre otros elementos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: box-shadow 0.3s ease; /* Transición suave para efectos */
+}
+
+/* Contenido del header con diseño flexible */
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Espacio entre logo y navegación */
+    align-items: center; /* Alineación vertical centrada */
+    flex-wrap: wrap; /* Permite ajuste en pantallas pequeñas */
+}
+
+/* Sección del logo */
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Espacio entre logo e imagen */
+}
+
+/* Imagen del logo */
+.logo {
+    width: 70px; /* Ancho fijo del logo */
+    height: 70px;
+    border-radius: 100%; /* Logo circular */
+    object-fit: cover; /* Ajusta la imagen sin deformar */
+    border: 3px solid rgba(255, 255, 255, 0.3); /* Borde semi-transparente */
+}
+
+/* Texto del logo */
+.logo-text h1 {
+    font-size: 1.5rem;
+    font-weight: 700; /* Negrita */
+    margin: 0;
+    line-height: 1.2;
+}
+
+.logo-text p {
+    font-size: 0.85rem;
+    opacity: 0.9; /* Ligeramente transparente */
+    margin: 0;
+}
+
+/* Menú de navegación */
+.nav {
+    display: flex;
+    gap: 2rem; /* Espacio entre enlaces */
+    align-items: center;
+    position: relative; /* Para posicionar submenús */
+}
+
+/* Enlaces de navegación */
+.nav-link {
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease; /* Transición suave */
+    position: relative; /* Para efectos y submenús */
+}
+
+/* Efecto hover en enlaces */
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente */
+    transform: translateY(-2px); /* Sube ligeramente */
+}
+
+/* Línea inferior que aparece al hacer hover */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 80%; /* La línea se expande al hacer hover */
+}
+
+/* Contenedor del submenú desplegable */
+.nav-item {
+    position: relative;
+}
+
+/* Submenú desplegable (oculto por defecto) */
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* Se posiciona debajo del enlace padre */
+    left: 0;
+    background: white;
+    min-width: 220px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Sombra pronunciada */
+    padding: 0.5rem 0;
+    opacity: 0; /* Invisible por defecto */
+    visibility: hidden; /* Oculto por defecto */
+    transform: translateY(-10px); /* Posición inicial más arriba */
+    transition: all 0.3s ease; /* Transición suave */
+    z-index: 1001;
+}
+
+/* Mostrar submenú al pasar el cursor sobre el elemento padre */
+.nav-item:hover .dropdown-menu {
+    opacity: 1; /* Visible */
+    visibility: visible; /* Visible */
+    transform: translateY(0); /* Posición final */
+}
+
+/* Enlaces dentro del submenú */
+.dropdown-menu a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    color: #333; /* Texto oscuro */
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+/* Efecto hover en enlaces del submenú */
+.dropdown-menu a:hover {
+    background-color: #f0f4ff; /* Fondo azul claro */
+    color: #1e3c72; /* Texto azul oscuro */
+    padding-left: 2rem; /* Desplaza a la derecha */
+}
+
+/* Flecha indicadora en el enlace con submenú */
+.nav-item > .nav-link::before {
+    content: '▼';
+    font-size: 0.7rem;
+    margin-left: 0.3rem;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+/* Rota la flecha al hacer hover */
+.nav-item:hover > .nav-link::before {
+    transform: rotate(180deg);
+}

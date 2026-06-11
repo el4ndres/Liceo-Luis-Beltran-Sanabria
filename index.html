@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos del documento -->
+    <meta charset="UTF-8"> <!-- Codificación de caracteres UTF-8 para soportar acentos y ñ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace la página responsiva -->
+    <title>Liceo "Luis Beltrán Sanabria"</title> <!-- Título que aparece en la pestaña del navegador -->
+    
+    <!-- Enlaces a fuentes de Google Fonts -->
+    <link rel="shortcut icon" href="images/Escudo.png" type="image/x-icon"> <!-- logo de la institucion -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Precarga la conexión a Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Precarga la conexión a archivos estáticos -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> <!-- Importa la fuente Montserrat -->
+    
+    <!-- Enlace al archivo CSS principal -->
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    
+    <!-- ========================================
+         HEADER - Encabezado del sitio
+         Contiene el logo y el menú de navegación
+    ======================================== -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Sección del logo -->
+                <div class="logo-section">
+                    <img src="images/Escudo.png" alt="Logo Liceo 'Luís Beltrán Sanabria'" class="logo">
+                    <div class="logo-text">
+                        <h1>Liceo "Luis Beltrán Sanabria"</h1>
+                        <p>Excelencia Educativa desde 1959</p>
+                    </div>
+                </div>
+                
+                <!-- Menú de navegación -->
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="#noticias" class="nav-link">Noticias</a>
+                    
+                    <!-- Item con submenú desplegable para "Nosotros" -->
+                    <div class="nav-item">
+                        <a href="institucion.html" class="nav-link">Nosotros</a>
+                        <!-- Submenú que se despliega al pasar el cursor -->
+                        <div class="dropdown-menu">
+                            <a href="institucion.html#resena">Reseña Histórica</a>
+                            <a href="institucion.html#mision">Misión</a>
+                            <a href="institucion.html#vision">Visión</a>
+                            <a href="institucion.html#ubicacion">Ubicación</a>
+                            <a href="institucion.html#estructura">Estructura Organizativa</a>
+                        </div>
+                    </div>
+                    
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+         <!-- ========================================
+         HERO SECTION - Sección principal destacada
+         Banner grande con mensaje de bienvenida
+         ======================================== -->
+         <section id="inicio" class="hero">
+             <div class="hero-overlay"></div> <!-- Capa oscura sobre el fondo -->
+             <div class="container hero-container">
+            <div class="hero-content">
+                <h2 class="hero-title">Bienvenidos al<br><span>Liceo "Luis Beltrán Sanabria"</span></h2>
+                <p class="hero-subtitle">Formando ciudadanos íntegros, críticos y comprometidos con el desarrollo de Venezuela</p>
+                <div class="hero-buttons">
+                    <a href="institucion.html" class="btn btn-primary">Conocer Más</a>
+                    <a href="#contacto" class="btn btn-secondary">Contáctanos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="institucion">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestra Institución</h2>
+                <div class="accent-line"></div>
+            </div>
+            
+            <div class="institucion-content">
+                <div class="institucion-image">
+                    <img src="images/entrada.jpeg" alt="Comunidad educativa">
+                </div>
+                <div class="institucion-text">
+                    <h3>Reseña Histórica</h3>
+                    <p>El Liceo Bolivariano "Luis Beltrán Sanabria" inició sus actividades en el año 1959, después del derrocamiento del General Marcos Pérez Jiménez, siendo su primera sede una casa que está situada en la calle Bolívar perteneciente a la familia Ruíz. Su primer director fue el Profesor Carlos José Palomo y el Subdirector el Profesor Eleazar Rojas, contando con una nómina de trece docentes, una secretaria, una bibliotecaria y cuatro obreros.</p>
+                    <a href="institucion.html#resena" class="btn btn-primary">Ver Más Detalles</a>
+                </div>
+            </div>
+            
+    <!-- ========================================
+    ESPACIOS DESTACADOS - Nuestras instalaciones
+    Muestra las diferentes áreas del liceo
+    ======================================== -->
+    <section class="espacios">
+        <div class="container">
+            <h2 class="section-title">Nuestras Instalaciones</h2>
+            
+            <!-- Grid con las tarjetas de cada espacio -->
+            <div class="espacios-grid">
+                
+                <!-- Tarjeta 1: Aulas -->
+                <div class="espacio-card">
+                    <div class="espacio-image">
+                        <img src="images/laboratorios-new.jpeg" alt="Aulas de Clase">
+                    </div>
+                    <h3>Aulas de Clase</h3>
+                    <p>Espacios modernos y equipados para una educación de calidad</p>
+                </div>
+                
+                <!-- Tarjeta 2: Laboratorios -->
+                <div class="espacio-card">
+                    <div class="espacio-image">
+                        <img src="images/aulas.jpeg" alt="Laboratorios">
+                    </div>
+                    <h3>Laboratorios Especializados</h3>
+                    <p>7 laboratorios de Física, Química, Biología y Ciencias de la Tierra</p>
+                </div>
+                
+                <!-- Tarjeta 3: Canchas -->
+                <div class="espacio-card">
+                    <div class="espacio-image">
+                        <img src="images/cancha.jpeg" alt="Canchas Deportivas">
+                    </div>
+                    <h3>Áreas Deportivas</h3>
+                    <p>2 canchas deportivas para el desarrollo físico integral</p>
+                </div>
+                
+                <!-- Tarjeta 4: Sala de Informática -->
+                <div class="espacio-card">
+                    <div class="espacio-image">
+                        <img src="images/sala-informatica.jpeg" alt="Sala de Informática">
+                    </div>
+                    <h3>Sala de Informática</h3>
+                    <p>Tecnología de punta para la educación del siglo XXI</p>
+                </div>
+                
+                <!-- Tarjeta 5: Sala de Informática -->
+                <div class="espacio-card">
+                    <div class="espacio-image">
+                        <img src="images/salon de cultura.jpeg" alt="Sala de Informática">
+                    </div>
+                    <h3>Salon de Cultura</h3>
+                    <p>Espacios que inspiran. Arte, música y comunidad en un solo lugar.</p>
+                </div>
+
+                <!-- Tarjeta 6: Enfermería -->
+                <div class="espacio-card">
+                    <div class="espacio-image">
+                        <img src="images/enfermería.jpeg" alt="Enfermería">
+                    </div>
+                    <h3>Enfermería</h3>
+                    <p>Un lugar seguro para tu bienestar. Siempre aquí para cuidarte. 👩‍⚕️🤝</p>
+                </div>
+
+                <!-- Tarjeta 7: Comedor -->
+                <div class="espacio-card">
+                    <div class="espacio-image">
+                        <img src="images/comedor.jpg" alt="Comedor">
+                    </div>
+                    <h3>Comedor Institucional</h3>
+                    <p>Comprometidos con el bienestar de nuestros alumnos. Instalaciones limpias y seguras para su alimentación diaria. ✨</p>
+                </div>
+
+                <!-- Tarjeta 8: Espacios de desarrolo endogenos -->
+                <div class="espacio-card">
+                    <div class="espacio-image">
+                        <img src="images/desarrolo endogenos.jpg" alt="desarrollo endogenos">
+                    </div>
+                    <h3>Cultivo Escolar</h3>
+                    <p>Conectando con nuestras raíces. Cultivamos vida y conciencia ambiental en nuestra propia institución. 🌿🌍</p>
+                </div>
+                
+                <!-- Tarjeta 9: servicio de seguridad -->
+                <div class="espacio-card">
+                    <div class="espacio-image">
+                        <img src="images/seguridad.jpg" alt="Seguridad">
+                    </div>
+                    <h3>Seguridad</h3>
+                    <p>Ambientes seguros para un desarrollo pleno. Disponemos de vigilancia y protocolos de seguridad de alto nivel para el bienestar de todos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ========================================
+    NOTICIAS - Últimas noticias y eventos
+    Muestra las dos noticias principales
+    ======================================== -->
+    <section id="noticias" class="noticias">
+        <div class="container">
+            <h2 class="section-title">Últimas Noticias</h2>
+            
+            <!-- Grid con las tarjetas de noticias -->
+            <div class="noticias-grid">
+                
+                <!-- Noticia 1: Olimpiadas de Rompecabezas -->
+                <article class="noticia-card">
+                    <div class="noticia-image">
+                        <img src="images/olimpiadas.jpg" alt="Olimpiadas de Rompecabezas 2025">
+                    </div>
+                    <div class="noticia-content">
+                        <span class="noticia-fecha">22 de Marzo, 2025</span>
+                        <h3>¡Primer y Tercer Lugar en las Olimpiadas de Rompecabezas 2025!</h3>
+                        <p>Nuestros estudiantes brillaron en las Olimpiadas de Rompecabezas, obteniendo el primer y tercer lugar. Esta actividad fomenta el pensamiento lógico, la concentración y el trabajo en equipo. ¡Felicitaciones a nuestros campeones que representaron con orgullo al Liceo 'Luís Beltrán Sanabria'!</p>
+                        <a href="#" class="noticia-link">Leer más →</a>
+                    </div>
+                </article>
+                
+                <!-- Noticia 2: Nueva Identidad (Deslave) -->
+                <article class="noticia-card">
+                    <div class="noticia-image">
+                        <img src="images/entrada.jpeg" alt="Nueva infraestructura del liceo">
+                    </div>
+                    <div class="noticia-content">
+                        <span class="noticia-fecha">15 de Septiembre, 2024</span>
+                        <h3>Nueva Identidad: Ahora Somos Liceo "Luis Beltrán Sanabria"</h3>
+                        <p>El 15 de septiembre de 2024 marca un momento histórico: tras la reconstrucción completa de nuestras instalaciones después del deslave del 2 de julio, adoptamos oficialmente el nombre de Liceo 'Luís Beltrán Sanabria', reafirmando nuestro compromiso con la educación de excelencia y honrando nuestra trayectoria desde 1959.</p>
+                        <a href="#" class="noticia-link">Leer más →</a>
+                    </div>
+                </article>
+                
+            </div>
+        </div>
+    </section>
+    
+    <!-- ========================================
+    CONTACTO - Sección de contacto
+    Información y formulario de contacto
+    ======================================== -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2 class="section-title">Contáctanos</h2>
+            
+            <!-- Grid dividido en información y formulario -->
+            <div class="contacto-grid">
+                
+                <!-- Columna izquierda: Información de contacto -->
+                <div class="contacto-info">
+                    <h3>Información de Contacto</h3>
+                    
+                    <!-- Dirección -->
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <!-- Icono de ubicación (SVG) -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Dirección</h4>
+                            <p>Calle "Las Flores"<br>Cumanacoa, Municipio Montes<br>Estado Sucre, Venezuela</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Teléfono -->
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <!-- Icono de teléfono (SVG) -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>02938381865</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Email -->
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <!-- Icono de email (SVG) -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>liceoluisbeltransanabria@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Horario -->
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <!-- Icono de reloj (SVG) -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Horario</h4>
+                            <p>Lunes a Viernes<br>7:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <!-- Columna derecha: Formulario de contacto -->
+                <div class="contacto-form">
+                    <h3>Envíanos un Mensaje</h3>
+                    <form action="https://formspree.io/f/xgoqlzyn" method="POST">
+                        
+                        <!-- Campo: Nombre -->
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        
+                        <!-- Campo: Email -->
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <!-- Campo: Teléfono -->
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                        
+                        <!-- Campo: Mensaje -->
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        
+                        <!-- Botón de envío -->
+                        <button type="submit" class="btn btn-primary btn-full">Enviar Mensaje</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+</main>
+    
+    <!-- ========================================
+         FOOTER - Pie de página
+         Información adicional y enlaces
+    ======================================== -->
+    <footer class="footer">
+        <div class="container">
+            
+            <!-- Contenido principal del footer -->
+            <div class="footer-content">
+                
+                <!-- Columna 1: Logo y descripción -->
+                <div class="footer-section">
+                    <img src="images/logo.jpeg" alt="Logo" class="footer-logo">
+                    <h3>Liceo "Luis<br>Beltrán Sanabria"</h3>
+                    <p>Formando el futuro de Venezuela desde 1959</p>
+                </div>
+                
+                <!-- Columna 2: Enlaces rápidos -->
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#noticias">Noticias</a></li>
+                        <li><a href="institucion.html">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Columna 3: Información de contacto -->
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>Calle Las Flores, Cumanacoa<br>Estado Sucre, Venezuela</p>
+                    <p>Tel: 02938381865</p>
+                    <p>Email: luisbeltransanabria1@gmail.com</p>
+                </div>
+                
+                <!-- Columna 4: Redes sociales -->
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <!-- Enlace a Facebook -->
+                        <a href="https://www.facebook.com/profile.php?id=100070040366858&locale=es_LA" target="_blank" class="social-link" title="Facebook">
+                            <!-- Icono de Facebook (SVG) -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Parte inferior del footer -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 Liceo "Luis Beltrán Sanabria".</p>
+            </div>
+            
+        </div>
+    </footer>
+
+</body>
+</html>

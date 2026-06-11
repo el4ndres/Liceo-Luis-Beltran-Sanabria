@@ -1,0 +1,22 @@
+/* ========================================
+   STYLES.CSS - Archivo principal de estilos
+   Página Institucional (institucion.html)
+   Importa todos los módulos CSS necesarios
+======================================== */
+
+/* Importación de módulos CSS en orden */
+
+/* 1. Reset y estilos base */
+@import '00-reset.css';
+
+/* 2. Header con navegación */
+@import '01-header.css';
+
+/* 3. Contenido institucional */
+@import '02-section-institucional.css';
+
+/* 4. Footer */
+@import '03-footer.css';
+
+/* 5. Responsive (debe ir al final) */
+@import '04-responsive.css';

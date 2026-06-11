@@ -1,0 +1,104 @@
+/* ========================================
+   FOOTER - Pie de página del sitio
+   Contiene enlaces, información de contacto
+   y redes sociales
+======================================== */
+
+.footer {
+    background: linear-gradient(135deg, #1e3c72 0%, #152a52 100%); /* Gradiente azul oscuro */
+    color: white;
+    padding: 3rem 0 1rem; /* Espaciado vertical */
+}
+
+/* Contenido principal del footer */
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grid responsivo */
+    gap: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Cada sección del footer */
+.footer-section h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #ffd700; /* Dorado */
+}
+
+.footer-section p {
+    color: rgba(255, 255, 255, 0.8); /* Blanco semi-transparente */
+    line-height: 1.8;
+}
+
+/* Logo en el footer */
+.footer-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Lista de enlaces en el footer */
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.7rem;
+}
+
+/* Enlaces del footer */
+.footer-section a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+/* Efecto hover en enlaces */
+.footer-section a:hover {
+    color: #ffd700; /* Dorado */
+    transform: translateX(5px); /* Se desplaza a la derecha */
+}
+
+/* Contenedor de enlaces de redes sociales */
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Enlaces individuales de redes sociales */
+.social-link {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover en enlaces sociales */
+.social-link:hover {
+    background: #ffd700; /* Dorado */
+    transform: translateY(-3px); /* Sube ligeramente */
+}
+
+.social-link:hover svg {
+    color: #1e3c72; /* Icono azul oscuro al hacer hover */
+}
+
+/* Parte inferior del footer */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Línea divisoria */
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}

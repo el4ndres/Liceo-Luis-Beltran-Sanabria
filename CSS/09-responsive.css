@@ -1,0 +1,116 @@
+/* ========================================
+   RESPONSIVE - Estilos para diferentes tamaños de pantalla
+   Adaptaciones para tablets y móviles
+======================================== */
+
+/* Tablets (pantallas medianas) */
+@media (max-width: 768px) {
+    
+    /* Header */
+    .header-content {
+        flex-direction: column; /* Apila elementos verticalmente */
+        gap: 1rem;
+    }
+    
+    .nav {
+        flex-wrap: wrap; /* Permite salto de línea */
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+    /* Hero */
+    .hero {
+        height: 500px; /* Reduce altura */
+    }
+    
+    .hero-title {
+        font-size: 2.5rem; /* Reduce tamaño del título */
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    /* Sección Nosotros */
+    .nosotros-content {
+        flex-direction: column; /* Apila texto e imagen */
+    }
+    
+    .mision-vision {
+        grid-template-columns: 1fr; /* Una sola columna */
+    }
+    
+    /* Contacto */
+    .contacto-grid {
+        grid-template-columns: 1fr; /* Una sola columna */
+    }
+    
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr; /* Una sola columna */
+        text-align: center;
+    }
+}
+
+/* Móviles (pantallas pequeñas) */
+@media (max-width: 480px) {
+    
+    /* Ajustes generales */
+    section {
+        padding: 3rem 0; /* Reduce espaciado vertical */
+    }
+    
+    .section-title {
+        font-size: 2rem; /* Reduce tamaño del título */
+    }
+    
+    /* Hero */
+    .hero {
+        height: 400px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column; /* Botones apilados */
+        width: 100%;
+    }
+    
+    .btn {
+        width: 100%; /* Botones de ancho completo */
+    }
+    
+    /* Grids */
+    .espacios-grid,
+    .noticias-grid {
+        grid-template-columns: 1fr; /* Una sola columna */
+        gap: 1.5rem;
+    }
+    
+    /* Logo */
+    .logo-text h1 {
+        font-size: 1.2rem;
+    }
+    
+    .logo-text p {
+        font-size: 0.75rem;
+    }
+}
+
+/* Pantallas muy pequeñas */
+@media (max-width: 320px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .btn {
+        padding: 0.75rem 1.5rem; /* Reduce padding de botones */
+        font-size: 0.9rem;
+    }
+}

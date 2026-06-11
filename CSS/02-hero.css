@@ -1,0 +1,76 @@
+/* ========================================
+   HERO SECTION - Sección principal destacada
+   Banner grande con imagen de fondo,
+   título principal y llamado a la acción
+======================================== */
+
+.hero {
+    background-image: url(/images/inicio.jpg);
+    background-size: 100% 100%; /* Ajusta la imagen al tamaño de la pantalla */
+    background-repeat: no-repeat; /* No repite la imagen */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+    position: relative; /* Para posicionar overlay y contenido */
+    height: 600px; /* Altura fija de la sección hero */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    overflow: hidden; /* Oculta desbordamientos */
+}
+
+/* Overlay oscuro sobre la imagen de fondo */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Capa semi-transparente oscura */
+    z-index: 1; /* Aparece sobre la imagen pero debajo del contenido */
+}
+
+/* Contenedor del contenido hero */
+.hero-container {
+    position: relative;
+    z-index: 2; /* Aparece sobre el overlay */
+    text-align: center; /* Centra el texto */
+}
+
+/* Contenido de texto del hero */
+.hero-content {
+    color: white;
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra horizontalmente */
+}
+
+/* Título principal del hero */
+.hero-title {
+    font-size: 3.5rem; /* Tamaño grande */
+    font-weight: 800; /* Extra negrita */
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra para legibilidad */
+}
+
+/* Span destacado dentro del título */
+.hero-title span {
+    display: block; /* En nueva línea */
+    color: #ffd700; /* Color dorado */
+    margin-top: 0.5rem;
+}
+
+/* Subtítulo del hero */
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    opacity: 0.95; /* Ligeramente transparente */
+    line-height: 1.6;
+}
+
+/* Contenedor de botones del hero */
+.hero-buttons {
+    display: flex;
+    gap: 1rem; /* Espacio entre botones */
+    justify-content: center; /* Centra los botones */
+    flex-wrap: wrap; /* Permite ajuste en pantallas pequeñas */
+}
